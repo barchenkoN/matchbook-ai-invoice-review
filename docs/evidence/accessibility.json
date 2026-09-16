@@ -1,0 +1,14 @@
+[
+  {
+    "screen": "inbox",
+    "violations": []
+  },
+  {
+    "screen": "review",
+    "violations": []
+  },
+  {
+    "screen": "mobile-review",
+    "violations": []
+  }
+]

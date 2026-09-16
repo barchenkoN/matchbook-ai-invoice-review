@@ -1,0 +1,2396 @@
+{
+  "summary": {
+    "corpus": "Synthetic digital PDFs; two held-out layouts sharing a simple one-line table structure",
+    "planned": 24,
+    "completed": 24,
+    "raw_exact": 14,
+    "pipeline_exact": 24,
+    "unsafe_passes": 0,
+    "errors": 0,
+    "latency_p50": 21.05,
+    "latency_p95": 21.36,
+    "implementation_sha256": "71946124ef751a6f37d303973b249fb4fb0dc5d8bbf64eb364283a869bd886e2",
+    "model": "Qwen3 0.6B Q8_0 GGUF dequantized to float32 in Transformers CPU",
+    "numeric_comparison": "Decimal normalization; strings and item order exact"
+  },
+  "records": [
+    {
+      "file": "INV-2026-5001.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5001",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5001",
+        "subtotal": "1300.00",
+        "tax": "0.00",
+        "total": "1300.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "13.00",
+            "line_total": "1300.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5001",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5001",
+        "subtotal": "1300.00",
+        "tax": "0.00",
+        "total": "1300.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "13.00",
+            "line_total": "1300.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5001",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5001",
+        "subtotal": "1300.00",
+        "tax": "0.00",
+        "total": "1300.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "13.00",
+            "line_total": "1300.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5001\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5001\",\n  \"subtotal\": \"1300.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1300.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1300.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 168
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 13.00 1300.00",
+            "page": 1,
+            "box": [
+              0.08063491935500128,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "price",
+        "quantity"
+      ],
+      "actual_issues": [
+        "price",
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.86
+    },
+    {
+      "file": "INV-2026-5002.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5002",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5002",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5002",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5002",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5002",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5002",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5002\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5002\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.05
+    },
+    {
+      "file": "INV-2026-5003.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5003",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5003",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5003",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5003",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5003",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5003",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5003\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5003\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.05
+    },
+    {
+      "file": "INV-2026-5004.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5004",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5004",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5004",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5004",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5004",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5004",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5004\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5004\",\n  \"subtotal\": \"1250.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1250.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 168
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+            "page": 1,
+            "box": [
+              0.08063491935500128,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "quantity"
+      ],
+      "actual_issues": [
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.09
+    },
+    {
+      "file": "INV-2026-5005.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5005",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5005",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5005",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5005",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5005",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5005",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5005\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5005\",\n  \"subtotal\": \"1040.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1040.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1040.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [
+        "price"
+      ],
+      "actual_issues": [
+        "price"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.06
+    },
+    {
+      "file": "INV-2026-5006.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5006",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5006",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5006",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5006",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5006",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5006",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5006\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5006\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.16
+    },
+    {
+      "file": "INV-2026-5007.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5007",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5007",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5007",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5007",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5007",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5007",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5007\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5007\",\n  \"subtotal\": \"1250.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1250.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 168
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+            "page": 1,
+            "box": [
+              0.08063491935500128,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "quantity"
+      ],
+      "actual_issues": [
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.11
+    },
+    {
+      "file": "INV-2026-5008.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5008",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5008",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5008",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5008",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5008",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5008",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5008\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5008\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.27
+    },
+    {
+      "file": "INV-2026-5009.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5009",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5009",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5009",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5009",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5009",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5009",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5009\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5009\",\n  \"subtotal\": \"1040.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1040.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1040.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [
+        "price"
+      ],
+      "actual_issues": [
+        "price"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.53
+    },
+    {
+      "file": "INV-2026-5010.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5010",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5010",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5010",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5010",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5010",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5010",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5010\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5010\",\n  \"subtotal\": \"1250.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1250.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 168
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+            "page": 1,
+            "box": [
+              0.08063491935500128,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "quantity"
+      ],
+      "actual_issues": [
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.17
+    },
+    {
+      "file": "INV-2026-5011.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5011",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5011",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5011",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5011",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5011",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5011",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5011\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5011\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.05
+    },
+    {
+      "file": "INV-2026-5012.pdf",
+      "layout": 4,
+      "expected": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5012",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5012",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5012",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5012",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Cobalt Wholesale",
+        "invoice_number": "INV-2026-5012",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-5012",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Cobalt Wholesale\",\n  \"invoice_number\": \"INV-2026-5012\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-5012\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.97
+    },
+    {
+      "file": "INV-2026-6001.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6001",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6001",
+        "subtotal": "1300.00",
+        "tax": "0.00",
+        "total": "1300.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "13.00",
+            "line_total": "1300.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6001",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6001",
+        "subtotal": "0.00",
+        "tax": "0.00",
+        "total": "0.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "13.00",
+            "line_total": "1300.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6001",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6001",
+        "subtotal": "1300.00",
+        "tax": "0.00",
+        "total": "1300.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "13.00",
+            "line_total": "1300.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6001\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6001\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1300.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 162
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "subtotal",
+          "model_value": "0.00",
+          "source_value": "1300.00",
+          "source": {
+            "text": "Subtotal 1300.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.5384041949433287,
+              0.9054629485905351,
+              0.5514700380025984
+            ]
+          }
+        },
+        {
+          "field": "total",
+          "model_value": "0.00",
+          "source_value": "1300.00",
+          "source": {
+            "text": "Total EUR 1300.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.604471036470569,
+              0.9054629485905351,
+              0.621100291273276
+            ]
+          }
+        },
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 13.00 1300.00",
+            "page": 1,
+            "box": [
+              0.11087301411312675,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "price",
+        "quantity"
+      ],
+      "actual_issues": [
+        "price",
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.33
+    },
+    {
+      "file": "INV-2026-6002.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6002",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6002",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6002",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6002",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6002",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6002",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6002\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6002\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.08
+    },
+    {
+      "file": "INV-2026-6003.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6003",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6003",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6003",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6003",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6003",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6003",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6003\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6003\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.36
+    },
+    {
+      "file": "INV-2026-6004.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6004",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6004",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6004",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6004",
+        "subtotal": "0.00",
+        "tax": "0.00",
+        "total": "0.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6004",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6004",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6004\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6004\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 162
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "subtotal",
+          "model_value": "0.00",
+          "source_value": "1250.00",
+          "source": {
+            "text": "Subtotal 1250.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.5384041949433287,
+              0.9054629485905351,
+              0.5514700380025984
+            ]
+          }
+        },
+        {
+          "field": "total",
+          "model_value": "0.00",
+          "source_value": "1250.00",
+          "source": {
+            "text": "Total EUR 1250.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.604471036470569,
+              0.9054629485905351,
+              0.621100291273276
+            ]
+          }
+        },
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+            "page": 1,
+            "box": [
+              0.11087301411312675,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "quantity"
+      ],
+      "actual_issues": [
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.19
+    },
+    {
+      "file": "INV-2026-6005.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6005",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6005",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6005",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6005",
+        "subtotal": "0.00",
+        "tax": "0.00",
+        "total": "0.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6005",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6005",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6005\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6005\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1040.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 163
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "subtotal",
+          "model_value": "0.00",
+          "source_value": "1040.00",
+          "source": {
+            "text": "Subtotal 1040.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.5384041949433287,
+              0.9054629485905351,
+              0.5514700380025984
+            ]
+          }
+        },
+        {
+          "field": "total",
+          "model_value": "0.00",
+          "source_value": "1040.00",
+          "source": {
+            "text": "Total EUR 1040.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.604471036470569,
+              0.9054629485905351,
+              0.621100291273276
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "price"
+      ],
+      "actual_issues": [
+        "price"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.36
+    },
+    {
+      "file": "INV-2026-6006.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6006",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6006",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6006",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6006",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6006",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6006",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6006\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6006\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.08
+    },
+    {
+      "file": "INV-2026-6007.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6007",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6007",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6007",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6007",
+        "subtotal": "0.00",
+        "tax": "0.00",
+        "total": "0.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6007",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6007",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6007\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6007\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 162
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "subtotal",
+          "model_value": "0.00",
+          "source_value": "1250.00",
+          "source": {
+            "text": "Subtotal 1250.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.5384041949433287,
+              0.9054629485905351,
+              0.5514700380025984
+            ]
+          }
+        },
+        {
+          "field": "total",
+          "model_value": "0.00",
+          "source_value": "1250.00",
+          "source": {
+            "text": "Total EUR 1250.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.604471036470569,
+              0.9054629485905351,
+              0.621100291273276
+            ]
+          }
+        },
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+            "page": 1,
+            "box": [
+              0.11087301411312675,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "quantity"
+      ],
+      "actual_issues": [
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.11
+    },
+    {
+      "file": "INV-2026-6008.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6008",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6008",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6008",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6008",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6008",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6008",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6008\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6008\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.89
+    },
+    {
+      "file": "INV-2026-6009.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6009",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6009",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6009",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6009",
+        "subtotal": "0.00",
+        "tax": "0.00",
+        "total": "0.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6009",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6009",
+        "subtotal": "1040.00",
+        "tax": "0.00",
+        "total": "1040.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "13.00",
+            "line_total": "1040.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6009\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6009\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1040.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 163
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "subtotal",
+          "model_value": "0.00",
+          "source_value": "1040.00",
+          "source": {
+            "text": "Subtotal 1040.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.5384041949433287,
+              0.9054629485905351,
+              0.5514700380025984
+            ]
+          }
+        },
+        {
+          "field": "total",
+          "model_value": "0.00",
+          "source_value": "1040.00",
+          "source": {
+            "text": "Total EUR 1040.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.604471036470569,
+              0.9054629485905351,
+              0.621100291273276
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "price"
+      ],
+      "actual_issues": [
+        "price"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.22
+    },
+    {
+      "file": "INV-2026-6010.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6010",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6010",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6010",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6010",
+        "subtotal": "0.00",
+        "tax": "0.00",
+        "total": "0.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "1",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6010",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6010",
+        "subtotal": "1250.00",
+        "tax": "0.00",
+        "total": "1250.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "100",
+            "unit_price": "12.50",
+            "line_total": "1250.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6010\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6010\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 162
+        }
+      },
+      "source_corrections": [
+        {
+          "field": "subtotal",
+          "model_value": "0.00",
+          "source_value": "1250.00",
+          "source": {
+            "text": "Subtotal 1250.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.5384041949433287,
+              0.9054629485905351,
+              0.5514700380025984
+            ]
+          }
+        },
+        {
+          "field": "total",
+          "model_value": "0.00",
+          "source_value": "1250.00",
+          "source": {
+            "text": "Total EUR 1250.00",
+            "page": 1,
+            "box": [
+              0.5879629536302177,
+              0.604471036470569,
+              0.9054629485905351,
+              0.621100291273276
+            ]
+          }
+        },
+        {
+          "field": "items.0.quantity",
+          "model_value": "1",
+          "source_value": "100",
+          "source": {
+            "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+            "page": 1,
+            "box": [
+              0.11087301411312675,
+              0.4621388690063712,
+              0.9054629485905351,
+              0.4740169081511619
+            ]
+          }
+        }
+      ],
+      "raw_exact": false,
+      "final_exact": true,
+      "expected_issues": [
+        "quantity"
+      ],
+      "actual_issues": [
+        "quantity"
+      ],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 20.31
+    },
+    {
+      "file": "INV-2026-6011.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6011",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6011",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6011",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6011",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6011",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6011",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6011\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6011\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.06
+    },
+    {
+      "file": "INV-2026-6012.pdf",
+      "layout": 5,
+      "expected": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6012",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6012",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_model": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6012",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6012",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "final": {
+        "supplier": "Pine & Paper",
+        "invoice_number": "INV-2026-6012",
+        "invoice_date": "2026-09-01",
+        "currency": "EUR",
+        "po_number": "PO-6012",
+        "subtotal": "1000.00",
+        "tax": "0.00",
+        "total": "1000.00",
+        "items": [
+          {
+            "sku": "BOX-042",
+            "description": "Archive storage box",
+            "quantity": "80",
+            "unit_price": "12.50",
+            "line_total": "1000.00"
+          }
+        ]
+      },
+      "raw_response": {
+        "model": "Qwen3-0.6B-Transformers-CPU",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"supplier\": \"Pine & Paper\",\n  \"invoice_number\": \"INV-2026-6012\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-6012\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 453,
+          "completion_tokens": 169
+        }
+      },
+      "source_corrections": [],
+      "raw_exact": true,
+      "final_exact": true,
+      "expected_issues": [],
+      "actual_issues": [],
+      "unsafe_pass": false,
+      "evidence_fields": 13,
+      "seconds": 21.11
+    }
+  ]
+}

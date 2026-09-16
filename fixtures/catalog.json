@@ -1,0 +1,2462 @@
+[
+  {
+    "file": "INV-2026-1001.pdf",
+    "sha256": "fc52684cc0ddf5b7ceb8616bd452dde45ab8863b597a11005d98c464833551ec",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1001",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1001",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1002.pdf",
+    "sha256": "8f5eb80de5db8e4f21bca7b430f925206a20b0845b5a6065ec4ce026a552cfc1",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1002",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1002",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1003.pdf",
+    "sha256": "ce018cb8736021e96f37a00a3078ad638246d220ec99a833613df546f7a3a8c8",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1003",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1003",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1004.pdf",
+    "sha256": "b0a93e490194754564f76ba03aaa78d2bcb9e74c1b12490736ece29e3cd359a8",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1004",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1004",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1005.pdf",
+    "sha256": "1ff2805feb91f0eec1b971b0031ef28675bfefa70f398d4e9bd3efa39783ffaf",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1005",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1005",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1006.pdf",
+    "sha256": "0f9d0c4df66347e38e601fce97ae92ba61a1ae3be9d2704f132b13b4132f3d6d",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1006",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1006",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1007.pdf",
+    "sha256": "b755b03baf9d57b2d2ccf5f549fb1d94992690c8559974d52061000298dd8929",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1007",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1007",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1008.pdf",
+    "sha256": "75dc1dcdf0d5b7593fc488fcb821e8f0fb12e98ea7459c5548a121f979eeac3d",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1008",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1008",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-1009.pdf",
+    "sha256": "eccce9838b912ab63c5e1acad96a0c62e5afccdd969846548953fce40122b70f",
+    "layout": 0,
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-1009",
+      "supplier": "Nordline Supply",
+      "currency": "EUR",
+      "receipt_id": "GR-1009",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2001.pdf",
+    "sha256": "5389bf5e47ee69934029ef18273f605526b5876fbd0af436d6023d70818b188e",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2001",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2001",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2002.pdf",
+    "sha256": "54829c5e85acafb569a87be3c21e2126ad405829809c7dcd2c45034d17c6c08b",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2002",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2002",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2003.pdf",
+    "sha256": "df3b901735ee88a07be08c10c19db3247b9463dd9f930cc1a96d08d51e21f85e",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2003",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2003",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2004.pdf",
+    "sha256": "ad2b7937d86cb2949093732dce91b19712369409c0ba69113ee09db25403933b",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2004",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2004",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2005.pdf",
+    "sha256": "11e0e2ca307848ad927591455e94f2b6e9fded270dbfff57de348ff7c4a1b96f",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2005",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2005",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2006.pdf",
+    "sha256": "f998d53b001e16c66c3330f7b51297c25e960f31b230c4bfc009b208578c2ece",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2006",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2006",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2007.pdf",
+    "sha256": "bf434216f10c1199e72592ed9502407bbe7c531f436a796b88bc3f60bf7bcebb",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2007",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2007",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2008.pdf",
+    "sha256": "aca229066bc571f92c7ae3aaef72fe8185d6c3a8bc50f33f8d17b82c4d570895",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2008",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2008",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-2009.pdf",
+    "sha256": "b61b879ea8d71ee39b8aa6f7adcfabc92847e87fb16f5786eac4bf386ffbe325",
+    "layout": 1,
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-2009",
+      "supplier": "Atlas Components",
+      "currency": "EUR",
+      "receipt_id": "GR-2009",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3001.pdf",
+    "sha256": "4bd3e7ff6fba5cad21acff0b834acff63a63e94001a410099355b1764e0ccfb8",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3001",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3001",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3002.pdf",
+    "sha256": "982952753f8ec73cb5f49205620a5e57a4a41efc2b3aecd36b29b311e148276b",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3002",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3002",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3003.pdf",
+    "sha256": "d8eff216c8ef7a65e17705286779428dbb78bb8afad0b0be474c579984ee71b0",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3003",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3003",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3004.pdf",
+    "sha256": "2a4378dda42aafaf067946beaa2eea2ae8f39faf36e515e41787b8f3f3508fb4",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3004",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3004",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3005.pdf",
+    "sha256": "14da941a1f5ef59f71cc962782d6de92122de78f864aaa5d707089a76888615e",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3005",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3005",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3006.pdf",
+    "sha256": "8951c385047c51049ea6d16b8c9d00d3330ecdd9c6220fca0876af5bde0f6478",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3006",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3006",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3007.pdf",
+    "sha256": "d381d6965836c9c9e1d17075e687c3b7e0006b3af1256d1ee1ba6d1d152b6c77",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3007",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3007",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3008.pdf",
+    "sha256": "22aa95f4ff1cf75c9722d24b383a7f46ec822561e87c4c48b068885b090c2da9",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3008",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3008",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-3009.pdf",
+    "sha256": "997fd6ed225be08b071de7ca8baf3e384d434645a97cbb6865d1e39ad2025b14",
+    "layout": 2,
+    "split": "development",
+    "expected": {
+      "supplier": "Meridian Packaging",
+      "invoice_number": "INV-2026-3009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-3009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-3009",
+      "supplier": "Meridian Packaging",
+      "currency": "EUR",
+      "receipt_id": "GR-3009",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4001.pdf",
+    "sha256": "33841f278642997740f6ff449b3229ed42a13cfdeea3723655695ee45b81fc91",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4001",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4001",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4002.pdf",
+    "sha256": "50e5a891393328c2f3193f54df8233a22474938bf87cd99d48862819abba10bc",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4002",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4002",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4003.pdf",
+    "sha256": "f4b5e41e373e5592f6e60df84abba707326403910a12698d8feb77b84737b5ff",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4003",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4003",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4004.pdf",
+    "sha256": "763779aa92d1c73bb6a158801c52bb3b12870be8dfef5fd41d4880ceba69a150",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4004",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4004",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4005.pdf",
+    "sha256": "b312148c7ed2e96bc6ba1b8783436a394ea6a91c51faa102f362fed777110441",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4005",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4005",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4006.pdf",
+    "sha256": "4b6dcc47587f8d97c2d57167ec4daf538f72b94ff740f49dd96cf48ab8c8bdce",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4006",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4006",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4007.pdf",
+    "sha256": "99df47cb18d4a87eb11a91dba2352afa64afb8bf2a37c88c79c838002d786dba",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4007",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4007",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4008.pdf",
+    "sha256": "c85b216e48e2b014d496fea299fd575cdb81b406c25fcea9acfecc9b3f63eb3d",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4008",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4008",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-4009.pdf",
+    "sha256": "f1599660eb43b393b00d05354a699eca6e6c11664452aeb4dfcb92ffd864c5af",
+    "layout": 3,
+    "split": "development",
+    "expected": {
+      "supplier": "Forma Industrial",
+      "invoice_number": "INV-2026-4009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-4009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-4009",
+      "supplier": "Forma Industrial",
+      "currency": "EUR",
+      "receipt_id": "GR-4009",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5001.pdf",
+    "sha256": "7ecbc36e0a24ea516dbed2a67d3f52ee333aa9ab2821a8f9ba842013ef2976d0",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5001",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5001",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5002.pdf",
+    "sha256": "d8646e5a5a50383741784a4de547baebb06ee261c8b142a29d1105e08982e0ca",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5002",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5002",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5003.pdf",
+    "sha256": "e7bdad8f97359c705452ed9b343031b35b212493e9edb2b3ac8c0b55b9d45884",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5003",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5003",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5004.pdf",
+    "sha256": "d5e7b542e9634e6078854e15c2439b5325a82be7831124a73dce41987a6dcf38",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5004",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5004",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5005.pdf",
+    "sha256": "9e8b92f292b4fa03c2880a63f35d80db44403f99b89b3d911361838b4a76d40f",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5005",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5005",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5006.pdf",
+    "sha256": "fd00bb1e2b5a79daed13487286027fa35dd68eda0445576a1ac6694eb7131a5e",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5006",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5006",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5007.pdf",
+    "sha256": "4dc80a774a8c6cf5e635acc132334fd03f9798c606a0fb26e296930607bc3ac3",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5007",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5007",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5008.pdf",
+    "sha256": "ed8af2fe432c0bb2a674cbec2f4b5f2a6ed69185fa140ea2ed8d84a02feed282",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5008",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5008",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5009.pdf",
+    "sha256": "55b7baac08d0f51500150dabb9f6c1634fa8a97bb21a10ea26a1fd2e8fb9bbd5",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5009",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5009",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5010.pdf",
+    "sha256": "3ff5ac797abe993c90563f36d6df4319e0e709bdfb5f623ce7c4dba53d0d6833",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5010",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5010",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5010",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5010",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5011.pdf",
+    "sha256": "60bab4c9d2ef2c46821b0bb2f1146ed273d0e2bde25360e200480bf2cd877a82",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5011",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5011",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5011",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5011",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-5012.pdf",
+    "sha256": "a7af476af1ceded18da7df0efe312840541193a81e57cc9a8cd3cd6fee88dff4",
+    "layout": 4,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Cobalt Wholesale",
+      "invoice_number": "INV-2026-5012",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-5012",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-5012",
+      "supplier": "Cobalt Wholesale",
+      "currency": "EUR",
+      "receipt_id": "GR-5012",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6001.pdf",
+    "sha256": "7ed70d733b84ff15bdc0ebe75edafb555646ba9876fd4b0fe430598f772866c4",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6001",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6001",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6002.pdf",
+    "sha256": "e315a55ad52a79590b9394faa00f744823e33dc56e31646b5843553ec85b4218",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6002",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6002",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6003.pdf",
+    "sha256": "f074dc6361885797a8d9936f9b38551d6c150bd9a88f3c59be461518f06bd6a8",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6003",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6003",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6004.pdf",
+    "sha256": "95e82df7b43c2ca21f53bf0feba0deb41ed6e8d565ba9b4c346511781a433d62",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6004",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6004",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6005.pdf",
+    "sha256": "cde5a65a943f5dca8c627c5b2b6bf6f510bbe57bd2f9413f53532bd2a528b2d6",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6005",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6005",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6006.pdf",
+    "sha256": "cdfa9470eef40e07f282c51a43e80e52e464a4b6c82b0e28adfd8d63a3cc4cab",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6006",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6006",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6007.pdf",
+    "sha256": "3d0b85b453331a51b3e9937b14bc34c8c4d5bccbb03f571b78d8d67ad25f2a46",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6007",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6007",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6008.pdf",
+    "sha256": "4424fd4e4ad41a0d5c297719073db97143db3b7001fc88e60b63737adf4980e3",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6008",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6008",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6009.pdf",
+    "sha256": "1fdba2712ea04cca0ae1cc801679a48a3031aaafab449047375fd1f8fb33685e",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6009",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6009",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6010.pdf",
+    "sha256": "ab3cc7083c04a687424a7cbd2c5b057f250b197483929e513211efeeb47e2fea",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6010",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6010",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6010",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6010",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6011.pdf",
+    "sha256": "8c6127ac3624b8303969e8f9bb7a5d392e80d3a625c641cfe5d898af8c12b4a1",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6011",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6011",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6011",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6011",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  },
+  {
+    "file": "INV-2026-6012.pdf",
+    "sha256": "da67e763705fe215d8d9c38340f51e3454e6f7ebaff9204255a417c64772f6ae",
+    "layout": 5,
+    "split": "holdout",
+    "expected": {
+      "supplier": "Pine & Paper",
+      "invoice_number": "INV-2026-6012",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-6012",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "order": {
+      "id": "PO-6012",
+      "supplier": "Pine & Paper",
+      "currency": "EUR",
+      "receipt_id": "GR-6012",
+      "source": "synthetic sandbox",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "ordered": "100",
+          "received": "80",
+          "unit_price": "12.50"
+        }
+      ]
+    }
+  }
+]

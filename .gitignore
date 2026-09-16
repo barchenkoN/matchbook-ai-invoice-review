@@ -1,0 +1,31 @@
+# Local environments and secrets
+.venv/
+.env
+.env.*
+!.env.example
+
+# Downloaded models, generated documents, databases, and runtime state
+runtime/
+data/
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# Python caches and reports
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies (the production build in frontend/dist is intentional)
+node_modules/
+frontend/node_modules/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

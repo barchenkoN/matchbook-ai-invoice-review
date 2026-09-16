@@ -1,0 +1,16 @@
+[page 1] Nordline Supply
+[page 1] Supplier document / synthetic portfolio sample
+[page 1] INVOICE
+[page 1] Invoice number:INV-2026-1002
+[page 1] Invoicedate:2026-09-01
+[page 1] Purchase order:PO-1002
+[page 1] Currency:EUR
+[page 1] Bill to: Alder Works/ demonstration company
+[page 1] SKU/description Qty Unit price Amount
+[page 1] BOX-042 Archive storage box 80 12.50 1000.00
+[page 1] Subtotal 1000.00
+[page 1] Tax 0.00
+[page 1] Total EUR 1000.00
+[page 1] No payment required. All names, orders and amounts are fictional.
+[page 1] Zero-tax example.Not a tax invoice for commercial use.
+[page 1] Matchbook test corpus /

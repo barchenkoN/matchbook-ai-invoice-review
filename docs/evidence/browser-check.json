@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Reviewer sign-in and populated demo queue",
+    "Search, empty results, immediate clear and focus restoration",
+    "Exception blocks approval and evidence highlights original page",
+    "Dirty edits protected by app-owned dialog",
+    "Existing persisted sandbox draft verified; creation covered by live HTTP evidence and the earlier fresh demo run",
+    "390px layout, keyboard dialog exit and upload validation",
+    "No browser runtime errors"
+  ],
+  "browser_errors": []
+}

@@ -1,0 +1,1716 @@
+[
+  {
+    "file": "INV-2026-1001.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+    "seconds": 2.11
+  },
+  {
+    "file": "INV-2026-1002.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1002",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1002",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1002\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1002\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 169
+      }
+    },
+    "exact": true,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1002",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1002",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.quantity": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 22.22
+  },
+  {
+    "file": "INV-2026-1003.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1003",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1003",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1003\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1003\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 169
+      }
+    },
+    "exact": true,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1003",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1003",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.quantity": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 20.94
+  },
+  {
+    "file": "INV-2026-1004.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1004",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1004",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1004",
+      "subtotal": "0.00",
+      "tax": "0.00",
+      "total": "0.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "1",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1004\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1004\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 162
+      }
+    },
+    "exact": false,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1004",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1004",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 19.64
+  },
+  {
+    "file": "INV-2026-1005.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1005",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1005",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1005",
+      "subtotal": "0.00",
+      "tax": "0.00",
+      "total": "0.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1005\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1005\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1040.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 163
+      }
+    },
+    "exact": false,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1005",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1005",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.quantity": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 19.88
+  },
+  {
+    "file": "INV-2026-1006.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1006",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1006",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1006\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1006\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 169
+      }
+    },
+    "exact": true,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1006",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1006",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.quantity": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 20.78
+  },
+  {
+    "file": "INV-2026-1007.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1007",
+      "subtotal": "1250.00",
+      "tax": "0.00",
+      "total": "1250.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1007",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1007",
+      "subtotal": "0.00",
+      "tax": "0.00",
+      "total": "0.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "1",
+          "unit_price": "12.50",
+          "line_total": "1250.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1007\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1007\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1250.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 454,
+        "completion_tokens": 162
+      }
+    },
+    "exact": false,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1007",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1007",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 100 12.50 1250.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 20.01
+  },
+  {
+    "file": "INV-2026-1008.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1008",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1008",
+      "subtotal": "1000.00",
+      "tax": "0.00",
+      "total": "1000.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "12.50",
+          "line_total": "1000.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1008\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1008\",\n  \"subtotal\": \"1000.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1000.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"12.50\",\n      \"line_total\": \"1000.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 169
+      }
+    },
+    "exact": true,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1008",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1008",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.quantity": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 80 12.50 1000.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 20.86
+  },
+  {
+    "file": "INV-2026-1009.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1009",
+      "subtotal": "1040.00",
+      "tax": "0.00",
+      "total": "1040.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Nordline Supply",
+      "invoice_number": "INV-2026-1009",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-1009",
+      "subtotal": "0.00",
+      "tax": "0.00",
+      "total": "0.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "80",
+          "unit_price": "13.00",
+          "line_total": "1040.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Nordline Supply\",\n  \"invoice_number\": \"INV-2026-1009\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-1009\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"80\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1040.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 163
+      }
+    },
+    "exact": false,
+    "evidence": {
+      "supplier": {
+        "text": "Nordline Supply",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.07004242122900166,
+          0.3897892001620761,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-1009",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2236361576063756,
+          0.3425354575258923,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.24976784372491512,
+          0.28504779970823596,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.3020312159619941,
+          0.2048681316687598,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-1009",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.2758995298434546,
+          0.291182773155829,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.quantity": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 80 13.00 1040.00",
+        "page": 1,
+        "box": [
+          0.08063491935500128,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 20.08
+  },
+  {
+    "file": "INV-2026-2001.pdf",
+    "split": "development",
+    "expected": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2001",
+      "subtotal": "1300.00",
+      "tax": "0.00",
+      "total": "1300.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "100",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "actual": {
+      "supplier": "Atlas Components",
+      "invoice_number": "INV-2026-2001",
+      "invoice_date": "2026-09-01",
+      "currency": "EUR",
+      "po_number": "PO-2001",
+      "subtotal": "0.00",
+      "tax": "0.00",
+      "total": "0.00",
+      "items": [
+        {
+          "sku": "BOX-042",
+          "description": "Archive storage box",
+          "quantity": "1",
+          "unit_price": "13.00",
+          "line_total": "1300.00"
+        }
+      ]
+    },
+    "raw": {
+      "model": "Qwen3-0.6B-Transformers-CPU",
+      "choices": [
+        {
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"supplier\": \"Atlas Components\",\n  \"invoice_number\": \"INV-2026-2001\",\n  \"invoice_date\": \"2026-09-01\",\n  \"currency\": \"EUR\",\n  \"po_number\": \"PO-2001\",\n  \"subtotal\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"0.00\",\n  \"items\": [\n    {\n      \"sku\": \"BOX-042\",\n      \"description\": \"Archive storage box\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"13.00\",\n      \"line_total\": \"1300.00\"\n    }\n  ]\n}"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 453,
+        "completion_tokens": 160
+      }
+    },
+    "exact": false,
+    "evidence": {
+      "supplier": {
+        "text": "Atlas Components",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.07004242122900166,
+          0.4670374529041672,
+          0.0985497151764993
+        ]
+      },
+      "invoice_number": {
+        "text": "Invoice number: INV-2026-2001",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.2236361576063756,
+          0.37277355228401776,
+          0.23670200066564537
+        ]
+      },
+      "invoice_date": {
+        "text": "Invoice date: 2026-09-01",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.24976784372491512,
+          0.31528589446636146,
+          0.26283368678418484
+        ]
+      },
+      "currency": {
+        "text": "Currency: EUR",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.3020312159619941,
+          0.23510622642688528,
+          0.3150970590212639
+        ]
+      },
+      "po_number": {
+        "text": "Purchase order: PO-2001",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.2758995298434546,
+          0.3214208679139545,
+          0.28896537290272434
+        ]
+      },
+      "subtotal": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "tax": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "total": {
+        "text": "Tax 0.00",
+        "page": 1,
+        "box": [
+          0.5879629536302177,
+          0.5728505084632217,
+          0.9054629485905351,
+          0.5859163515224914
+        ]
+      },
+      "items.0.sku": {
+        "text": "BOX-042 Archive storage box 100 13.00 1300.00",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.description": {
+        "text": "BOX-042 Archive storage box 100 13.00 1300.00",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.unit_price": {
+        "text": "BOX-042 Archive storage box 100 13.00 1300.00",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      },
+      "items.0.line_total": {
+        "text": "BOX-042 Archive storage box 100 13.00 1300.00",
+        "page": 1,
+        "box": [
+          0.11087301411312675,
+          0.4621388690063712,
+          0.9054629485905351,
+          0.4740169081511619
+        ]
+      }
+    },
+    "seconds": 19.72
+  }
+]
