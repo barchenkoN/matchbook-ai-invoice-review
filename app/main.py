@@ -38,9 +38,21 @@ def create_app(engine=None):
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "no-referrer"
         response.headers["X-Frame-Options"] = "DENY"
-        response.headers["Content-Security-Policy"] = (
-            "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'"
-        )
+        # FastAPI's built-in Swagger page loads its UI bundle from jsDelivr and
+        # initializes it with a small inline script. Keep that exception scoped
+        # to the documentation page; the application itself remains self-only.
+        if request.url.path == "/docs":
+            response.headers["Content-Security-Policy"] = (
+                "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; "
+                "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; "
+                "img-src 'self' blob: https://fastapi.tiangolo.com; connect-src 'self'; "
+                "frame-ancestors 'none'; object-src 'none'"
+            )
+        else:
+            response.headers["Content-Security-Policy"] = (
+                "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
+                "img-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'"
+            )
         if request.url.path.startswith("/api"):
             response.headers["Cache-Control"] = "no-store"
         return response
